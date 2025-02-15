@@ -16,7 +16,6 @@ public class HtmlFetcher {
 
         List<String> htmlLines = new ArrayList<>();
 
-        // Correct declaration of BufferedReader inside try-with-resources
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
             String line;
             while ((line = reader.readLine()) != null) {
